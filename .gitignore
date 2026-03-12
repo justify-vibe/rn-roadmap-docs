@@ -1,0 +1,51 @@
+# =========================
+# 文档仓库通用 .gitignore
+# =========================
+
+# macOS
+.DS_Store
+
+# 编辑器 / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# 日志
+*.log
+
+# 环境变量（即使是文档仓库也常见）
+.env
+.env.*
+
+# Node（如果你用 pnpm/npm 做格式化/构建文档工具链）
+node_modules/
+
+# 构建产物（如 Docusaurus/VitePress/MkDocs 等）
+dist/
+build/
+.coverage/
+coverage/
+
+# 常见静态站点生成目录
+.cache/
+.temp/
+.next/
+.nuxt/
+.hugo_build.lock
+
+# VitePress（文档构建缓存与产物）
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# PDF/导出（如果你会从 md 导出，避免把大文件/中间产物提交）
+*.pdf
+*.docx
+
+# 本地脚本/私有配置（可按需保留/删除）
+*.local
